@@ -34,7 +34,7 @@ export default function Home() {
     <motion.div  initial={{ opacity: 0,}}       
     whileInView={{ opacity: 1 }}       
     viewport={{ once: true, amount: 0.3 }}
-    transition={{ duration: 1.2, ease: "easeOut" }} className="text-center mb-16 lg:mb-[70px] flex flex-col items-center justify-center">
+    transition={{ duration: 1.2, ease: "easeOut" }} className="mt-{-50px] lg:mt-0 text-center mb-16 lg:mb-[70px] flex flex-col items-center justify-center">
   <h1 className="font-[eb-garamond] text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-normal leading-snug sm:leading-[78px]">
     Kozmetički SALON ANGELS
   </h1>
