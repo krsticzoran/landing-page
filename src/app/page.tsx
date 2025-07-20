@@ -34,7 +34,7 @@ export default function Home() {
     <motion.div  initial={{ opacity: 0,}}       
     whileInView={{ opacity: 1 }}       
     viewport={{ once: true, amount: 0.3 }}
-    transition={{ duration: 1.2, ease: "easeOut" }} className="-mt-[20px] lg:mt-0 text-center mb-16 lg:mb-[70px] flex flex-col items-center justify-center">
+    transition={{ duration: 1.2, ease: "easeOut" }} className="-mt-[20px] lg:mt-0 text-center mb-12 sm:mb-16 lg:mb-[70px] flex flex-col items-center justify-center">
   <h1 className="font-[eb-garamond] text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-normal leading-snug sm:leading-[78px]">
     Kozmetički SALON ANGELS
   </h1>
@@ -45,9 +45,9 @@ export default function Home() {
       }
     }
   `}</style>
-  <h2 className="font-[eb-garamond] text-lg sm:text-xl md:text-2xl lg:text-[30px] mt-2 sm:mt-4">
+  <h5 className="font-[eb-garamond] text-lg sm:text-xl md:text-2xl lg:text-[30px] mt-2 sm:mt-4">
     Ekskluzivna nega u srcu Novog Sada
-  </h2>
+  </h5>
 </motion.div>
 <motion.div  initial={{ opacity: 0,}}       
     whileInView={{ opacity: 1 }}       
