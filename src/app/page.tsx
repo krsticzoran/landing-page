@@ -19,7 +19,7 @@ export default function Home() {
   const images = [image2, image3, image4];
   return (
     <>
-    <div className="relative min-h-screen w-full ">
+    <div className="relative min-h-[100dvh] lg:min-h-screen w-full ">
   <div
     className="absolute inset-0 bg-black/50 z-0"
     aria-hidden="true"
@@ -65,7 +65,10 @@ export default function Home() {
     <Marquee />
     <div className="w-full flex flex-col sm:flex-row ">
       {images.map((img, index) => (
-        <div key={index} className="w-full h-[300px] relative">
+        <motion.div initial={{ opacity: 0,}}       
+        whileInView={{ opacity: 1 }}       
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 1.2, ease: "easeOut" }} key={index} className="w-full h-[300px] relative">
           <Image
             src={img}
             alt={`Image ${index + 2}`}
@@ -73,7 +76,7 @@ export default function Home() {
             style={{ objectFit: "cover" }}
             sizes="100vw"
           />
-        </div>
+        </motion.div>
       ))}
     </div>
     </section>
