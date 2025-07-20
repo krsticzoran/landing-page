@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Jost, EB_Garamond } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/layout/header";
+import Footer from "@/components/layout/footer";
 
+const jost = Jost({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-jost",
+});
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -11,6 +18,13 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+export const ebGaramond = EB_Garamond({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-eb-garamond',
+})
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,9 +39,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${jost.variable}${ebGaramond.variable} antialiased relative`}
       >
+        <Header />
         {children}
+        <Footer/>
       </body>
     </html>
   );
