@@ -9,7 +9,7 @@ interface FooterLinksProps {
 export default function FooterLinks({ title, data, addMargin }: FooterLinksProps) {
     return (
       <div className={addMargin ? "mr-20" : ""}>
-        <h3 className="font-bold uppercase text-black/80">{title}</h3>
+        <h5 className="font-bold uppercase text-black/80">{title}</h5>
         <ul>
           {data.map((el, i) => (
             <li

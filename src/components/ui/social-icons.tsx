@@ -3,6 +3,7 @@ import Link from "next/link";
 import {
     IconBrandInstagram,
     IconBrandFacebook,
+    IconBrandYoutube,
   } from "@tabler/icons-react";
   import type { Icon } from "@tabler/icons-react";
   
@@ -23,6 +24,11 @@ import {
         href: "https://www.instagram.com/",
         label: "Instagram",
         icon: IconBrandInstagram,
+      },
+      {
+        href: "https://www.youtube.com/",
+        label: "YouTube",
+        icon: IconBrandYoutube,
       },
   ];
 
@@ -47,19 +53,21 @@ export default function SocialIcons({
         const linkHref = isEmail ? `mailto:${href}` : href;
 
         return (
-          <Link
+          <li
             key={href}
-            href={linkHref}
+          
+            className="rounded-xl w-5 h-5  duration-300 flex items-center justify-center"
+          >
+            <Link   href={linkHref}
             // Only add target and rel attributes if it's not an email link
             {...(!isEmail && {
               target: "_blank",
               rel: "noopener noreferrer",
             })}
-            aria-label={label}
-            className="rounded-xl w-5 h-5  duration-300 flex items-center justify-center"
-          >
+            aria-label={label}>
             <Icon size={size} />
           </Link>
+          </li>
         );
       })}
     </div>

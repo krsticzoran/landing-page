@@ -17,23 +17,23 @@ import SocialIcons from "../ui/social-icons";
 const navLinks = [
     {
       label: "Nega lica i tela",
-      href: "/nega-lica-i-tela",
+      href: "/",
     },
     {
       label: "Frizer",
-      href: "/frizer",
+      href: "/",
     },
     {
       label: "Nega ruku i nogu",
-      href: "/nega-ruku-i-nogu",
+      href: "/",
     },
     {
       label: "Depilacija / Epilacija",
-      href: "/uklanjanje-dlaka",
+      href: "/",
     },
     {
       label: "Šminkanje",
-      href: "/sminka",
+      href: "/",
     },
   ];
 
@@ -75,7 +75,7 @@ export default function MobileNav({scrolled}: { scrolled: boolean }) {
         </div>
         <div className="flex flex-col gap-4 p-4">
           {navLinks.map(({ href, label }) => (
-            <SheetClose asChild key={href}>
+            <SheetClose asChild key={label}>
               <Link
                 href={href}
                 className={

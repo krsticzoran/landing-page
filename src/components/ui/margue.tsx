@@ -26,13 +26,15 @@ export default function ScrollingText() {
     <div className="bg-transparent text-black py-4 lg:py-6 overflow-hidden whitespace-nowrap group">
       <div className="animate-scroll inline-block min-w-full">
         {[...links, ...links].map((link, index) => (
-          <Link
+          <li
             key={index}
-            href={link.href}
             className="mx-6 text-lg lg:text-xl font-medium inline-block hover:underline pointer-events-auto"
           >
+            <Link  href={link.href}>
             {link.label}
-          </Link>
+            </Link>
+            
+          </li>
         ))}
       </div>
 

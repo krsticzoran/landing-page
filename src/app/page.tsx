@@ -19,6 +19,7 @@ export default function Home() {
   const images = [image2, image3, image4];
   return (
     <>
+    {/* Background and Hero Section */}
     <div className="relative min-h-[100dvh]  lg:min-h-screen w-full ">
   <div
     className="absolute inset-0 bg-black/50 z-0"
@@ -28,7 +29,7 @@ export default function Home() {
     className="absolute inset-0 bg-cover bg-center bg-no-repeat z-[-1]"
     style={{ backgroundImage: 'url("/bg.jpg")' }}
   />
-  
+   {/* Hero Section */}
   <div className="relative z-10 text-white flex flex-col items-center justify-center min-w-screen lg:min-h-screen min-h-[100dvh]">
     <Container as="main" className="relative lg:min-h-screen min-h-[100dvh] flex justify-center items-center flex-col ">
     <motion.div  initial={{ opacity: 0,}}       
@@ -47,9 +48,9 @@ export default function Home() {
         font-size: 16px}
     }
   `}</style>
-  <h5 id="hero-sub" className="font-[eb-garamond] text-lg sm:text-xl md:text-2xl lg:text-[30px] mt-2 sm:mt-4">
+  <p id="hero-sub" className="font-[eb-garamond] text-lg sm:text-xl md:text-2xl lg:text-[30px] mt-2 sm:mt-4">
     Ekskluzivna nega u srcu Novog Sada
-  </h5>
+  </p>
 </motion.div>
 <motion.div  initial={{ opacity: 0,}}       
     whileInView={{ opacity: 1 }}       
@@ -72,9 +73,9 @@ export default function Home() {
   <div >
     <section>
     <Marquee />
-    <div className="w-full flex flex-col sm:flex-row ">
+    <ul className="w-full flex flex-col sm:flex-row ">
       {images.map((img, index) => (
-        <motion.div initial={{ opacity: 0,}}       
+        <motion.li initial={{ opacity: 0}}       
         whileInView={{ opacity: 1 }}       
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 1.2, ease: "easeOut" }} key={index} className="w-full h-[300px] relative">
@@ -85,9 +86,9 @@ export default function Home() {
             style={{ objectFit: "cover" }}
             sizes="100vw"
           />
-        </motion.div>
+        </motion.li>
       ))}
-    </div>
+    </ul>
     </section>
     <section className="bg-[#F6EBE7] min-h-full">
     <Container  className=" min-h-full">

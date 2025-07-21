@@ -4,19 +4,19 @@ const navLinks = [
    
     {
       label: "Frizer",
-      href: "/frizer",
+      href: "/",
     },
     {
       label: "Šminkanje",
-      href: "/sminka",
+      href: "/",
     },
     {
       label: "Nega lica i tela",
-      href: "/nega-lica-i-tela",
+      href: "/",
     },
     {
       label: "Epilacija",
-      href: "/uklanjanje-dlaka",
+      href: "/",
     },
    
    
@@ -31,7 +31,7 @@ export default function DesktopNav() {
       {navLinks.map(({ href, label }) => {
       return (
           <li
-            key={href}
+          key={label}
             className={`font-medium text-[14px] leading-[19px] text-center tracking-[0.1em] uppercase  
               `}
           >
