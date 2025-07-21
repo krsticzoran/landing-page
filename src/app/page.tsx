@@ -19,7 +19,7 @@ export default function Home() {
   const images = [image2, image3, image4];
   return (
     <>
-    <div className="relative min-h-[100dvh] lg:min-h-screen w-full ">
+    <div className="relative min-h-[100dvh]  lg:min-h-screen w-full ">
   <div
     className="absolute inset-0 bg-black/50 z-0"
     aria-hidden="true"
@@ -29,8 +29,8 @@ export default function Home() {
     style={{ backgroundImage: 'url("/bg.jpg")' }}
   />
   
-  <div className="relative z-10 text-white flex flex-col items-center justify-center min-w-screen min-h-screen">
-    <Container as="main" className="relative min-h-screen flex justify-center items-center flex-col ">
+  <div className="relative z-10 text-white flex flex-col items-center justify-center min-w-screen lg:min-h-screen min-h-[100dvh]">
+    <Container as="main" className="relative lg:min-h-screen min-h-[100dvh] flex justify-center items-center flex-col ">
     <motion.div  initial={{ opacity: 0,}}       
     whileInView={{ opacity: 1 }}       
     viewport={{ once: true, amount: 0.3 }}
@@ -43,9 +43,11 @@ export default function Home() {
       h1 {
         font-size: 26px;
       }
+        #hero-sub {
+        font-size: 16px}
     }
   `}</style>
-  <h5 className="font-[eb-garamond] text-lg sm:text-xl md:text-2xl lg:text-[30px] mt-2 sm:mt-4">
+  <h5 id="hero-sub" className="font-[eb-garamond] text-lg sm:text-xl md:text-2xl lg:text-[30px] mt-2 sm:mt-4">
     Ekskluzivna nega u srcu Novog Sada
   </h5>
 </motion.div>
@@ -53,12 +55,12 @@ export default function Home() {
     whileInView={{ opacity: 1 }}       
     viewport={{ once: true, amount: 0.3 }} className="flex gap-3 sm:gap-4 justify-center ">
 
-  <Link   href="tel:+381691120036" className="bg-white text-black px-4 sm:px-6 py-2 rounded-none border border-transparent  font-jost text-[12px] sm:text-[14px]  font-medium tracking-[0.1em] leading-[20px] text-center uppercase cursor-pointer">
+  <Link   href="tel:+381691120036" className="bg-white text-black px-3 sm:px-6 py-2 rounded-none border border-transparent  font-jost text-[11px] sm:text-[14px]  font-medium tracking-[0.1em] leading-[20px] text-center uppercase cursor-pointer">
     Pozovite odmah
   </Link>
 
  
-  <Link  href="/zakazite-1/" className="bg-transparent text-white px-4 sm:px-6 py-2 rounded-none border border-white font-jost text-[12px] sm:text-[14px]  font-medium tracking-[0.1em] leading-[20px] text-center uppercase hover:bg-white hover:text-black duration-300 cursor-pointer">
+  <Link   href="/zakazite-1/" className="bg-transparent text-white px-3 sm:px-6 py-2 rounded-none border border-white font-jost text-[11px] sm:text-[14px]  font-medium tracking-[0.1em] leading-[20px] text-center uppercase hover:bg-white hover:text-black duration-300 cursor-pointer">
     Zakazite online
   </Link>
 </motion.div>

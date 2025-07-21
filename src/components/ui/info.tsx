@@ -7,10 +7,10 @@ export default function Info() {
 
     return (
         <motion.div
-              initial={{ opacity: 0, y: 50 }}   // start ispod sa transparentnošću 0
-              animate={{ opacity: 1, y: 0 }}    // ide na poziciju y=0 i postaje vidljiv
+              initial={{ opacity: 0, y: 50 }} 
+              animate={{ opacity: 1, y: 0 }}   
               transition={{ delay: 0.5, duration: 0.5, ease: "easeOut" }}
-              className="flex justify-between absolute bottom-16 lg:bottom-10 w-full font-jost px-4 sm:px-6 lg:px-8"
+              className="flex justify-between absolute bottom-6  lg:bottom-10 w-full font-jost px-4 sm:px-6 lg:px-8 left-0 right-0"
             >
           <div>
             <h5 className="font-medium text-[11px] sm:text-[13px] leading-[16px] sm:leading-[19px] tracking-[0.1em] uppercase inline-block mb-2 sm:mb-[9px]"
