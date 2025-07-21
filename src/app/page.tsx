@@ -29,6 +29,8 @@ export default function Home() {
     className="absolute inset-0 bg-cover bg-center bg-no-repeat z-[-1]"
     style={{ backgroundImage: 'url("/bg.jpg")' }}
   />
+
+
    {/* Hero Section */}
   <div className="relative z-10 text-white flex flex-col items-center justify-center min-w-screen lg:min-h-screen min-h-[100dvh]">
     <Container as="main" className="relative lg:min-h-screen min-h-[100dvh] flex justify-center items-center flex-col ">
@@ -59,12 +61,11 @@ export default function Home() {
   <Link   href="tel:+381691120036" className="bg-white text-black px-3 sm:px-6 py-2 rounded-none border border-transparent  font-jost text-[11px] sm:text-[14px]  font-medium tracking-[0.1em] leading-[20px] text-center uppercase cursor-pointer">
     Pozovite odmah
   </Link>
-
- 
   <Link   href="/zakazite-1/" className="bg-transparent text-white px-3 sm:px-6 py-2 rounded-none border border-white font-jost text-[11px] sm:text-[14px]  font-medium tracking-[0.1em] leading-[20px] text-center uppercase hover:bg-white hover:text-black duration-300 cursor-pointer">
     Zakazite online
   </Link>
 </motion.div>
+ {/* work time contact address */}
 <Info />
     </Container>
   </div>
@@ -72,8 +73,11 @@ export default function Home() {
 
   <div >
     <section>
+       {/* ScrollingText */}
     <Marquee />
-    <ul className="w-full flex flex-col sm:flex-row ">
+
+     {/* 3 images in a row - show the ambience of the salon */}
+    <ul className="w-full flex flex-col sm:flex-row">
       {images.map((img, index) => (
         <motion.li initial={{ opacity: 0}}       
         whileInView={{ opacity: 1 }}       
@@ -90,10 +94,12 @@ export default function Home() {
       ))}
     </ul>
     </section>
+
+
+    {/* about us section */}
     <section className="bg-[#F6EBE7] min-h-full">
     <Container  className=" min-h-full">
     <div className="flex flex-col lg:flex-row items-start gap-8 py-25">
-
   <motion.div
   initial={{ opacity: 0, y: -50 }}       
   whileInView={{ opacity: 1, y: 0 }}       
@@ -109,7 +115,6 @@ export default function Home() {
     />
   </motion.div>
 
- 
   <motion.div initial={{ opacity: 0, y: -50 }}       
   whileInView={{ opacity: 1, y: 0 }}       
   viewport={{ once: true, amount: 0.3 }}   
@@ -130,18 +135,14 @@ export default function Home() {
 
   </motion.div>
 </div>
-
-
-    </Container>
-
-    </section>
+ </Container>
+ </section>
    </div>
+
+
+    {/* skin care section */}
    <Container  as="section" className=" min-h-full">
     <div className="flex flex-col lg:flex-row items-start gap-8 pt-25 pb-16">
-
- 
-
- 
   <motion.div initial={{ opacity: 0, y: -50 }}       
   whileInView={{ opacity: 1, y: 0 }}       
   viewport={{ once: true, amount: 0.3 }}   
@@ -169,16 +170,14 @@ export default function Home() {
       sizes="(max-width: 1024px) 100vw, 50vw"
       
     />
-  
-
   </motion.div>
 </div>
+ </Container>
 
 
-    </Container>
+ {/* hand and foot care section */}
     <Container as="section" className=" min-h-full">
     <div className="flex flex-col lg:flex-row items-start gap-8 pt-8 pb-25">
-
   <motion.div initial={{ opacity: 0, y: -50 }}       
   whileInView={{ opacity: 1, y: 0 }}       
   viewport={{ once: true, amount: 0.3 }}   
@@ -192,8 +191,6 @@ export default function Home() {
     
     />
   </motion.div>
-
- 
   <motion.div initial={{ opacity: 0, y: -50 }}       
   whileInView={{ opacity: 1, y: 0 }}       
   viewport={{ once: true, amount: 0.3 }}   
@@ -208,19 +205,14 @@ export default function Home() {
 >
   Zakažite online
 </Link>
-
-   
-
   </motion.div>
 </div>
-
-
     </Container>
-    <section className="relative">
- 
-  <div className="absolute top-0 left-0 w-full h-1/2 bg-[#F6EBE7] z-0" />
 
- 
+
+    {/* youtube section */}
+    <section className="relative">
+  <div className="absolute top-0 left-0 w-full h-1/2 bg-[#F6EBE7] z-0" />
   <div className="relative z-10 flex flex-col lg:flex-row items-start gap-8 py-25">
     <Container className="min-h-full">
     <motion.div initial={{ opacity: 0, y: -50 }}       
