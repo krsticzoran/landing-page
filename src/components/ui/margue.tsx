@@ -24,7 +24,7 @@ const links = [
 export default function ScrollingText() {
   return (
     <div className="bg-transparent text-black py-4 lg:py-6 overflow-hidden whitespace-nowrap group">
-      <div className="animate-scroll inline-block min-w-full">
+      <ul className="animate-scroll inline-block min-w-full">
         {[...links, ...links].map((link, index) => (
           <li
             key={index}
@@ -36,7 +36,7 @@ export default function ScrollingText() {
             
           </li>
         ))}
-      </div>
+      </ul>
 
       <style jsx>{`
         @keyframes scroll {
