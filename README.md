@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Landing Page Challenge
 
-## Getting Started
+This project is a **responsive and animated landing page** built using modern frontend tools including **Next.js**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**.
 
-First, run the development server:
+**Live Demo**: [landing-page-rho-sepia.vercel.app](https://landing-page-rho-sepia.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🧪 About the Project
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This landing page was created as part of a job application challenge.  
+The task was to deliver a visually appealing and semantically optimized landing page **within 24 hours**.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+⏱️ Despite the tight deadline, the page was **practically completed in around 8 hours**.  
+The main challenge was racing against the clock while striving to maintain clean code, solid performance, and strong aesthetics.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔧 Tech Stack
 
-## Learn More
+- **Next.js** – for server-side rendering and routing  
+- **TypeScript** – for type safety and maintainability  
+- **Tailwind CSS** – for utility-first responsive design  
+- **Framer Motion** – for subtle, elegant animations
 
-To learn more about Next.js, take a look at the following resources:
+## 🎯 Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Fully responsive layout
+- Smooth animation transitions
+- Clean, semantic HTML structure
+- Mobile-first approach
+- Optimized for performance and clarity
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🖼️ Preview
 
-## Deploy on Vercel
+![Landing Page Screenshot](public/og-image.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🌐 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🙋‍♂️ Author
+
+Made by [Zoran Krstić](https://zkrstic.dev) – passionate about design clarity, semantic structure, and performance optimization.
+
+

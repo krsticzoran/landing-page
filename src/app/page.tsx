@@ -21,6 +21,7 @@ export default function Home() {
     <>
     {/* Background and Hero Section */}
     <div className="relative min-h-[100dvh]  lg:min-h-screen w-full ">
+      
   <div
     className="absolute inset-0 bg-black/50 z-0"
     aria-hidden="true"
